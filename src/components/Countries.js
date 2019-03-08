@@ -14,14 +14,14 @@ const styles = theme => ({
   },
 });
 
-function Countries({ countries }) {
+function Countries({ countries, term, onChange }) {
   const listOfCountries = countries.map(country => {
     return <Country key={country.name} country={country} />;
   });
 
   return (
     <>
-      <Input type="text" name="term" 
+      <Input type="text" name="term" value={term} onChange={onChange}
         placeholder='Search'
         inputProps={{
           'aria-label': 'Description',
@@ -33,6 +33,8 @@ function Countries({ countries }) {
 }
 
 Countries.propTypes = {
-  countries: PropTypes.array.isRequired
+  countries: PropTypes.array.isRequired,
+  term: PropTypes.string,
+  onChange: PropTypes.func
 };
 export default withStyles(styles)(Countries);
