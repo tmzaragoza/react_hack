@@ -3,7 +3,7 @@ import React from 'react';
 export default function App() {
   return (
     <>
-      <h2>Countries</h2>
+      <h2> hi</h2>
     </>
   );
 }

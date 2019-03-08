@@ -1,5 +1,5 @@
-// import { promiseMiddleware } from './promise';
+import { promiseMiddleware } from './promise';
 
-// export const middleware = [
-//   promiseMiddleware
-// ];
+export const middleware = [
+  promiseMiddleware
+];
