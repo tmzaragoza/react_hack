@@ -1,6 +1,6 @@
 import { FETCH_COUNTRIES } from '../actions/countries';
 const initialState = {
-  country: [
+  countries: [
     {
       name: 'fake name'
     }
@@ -15,8 +15,9 @@ export default function reducer(state = initialState, action) {
     case FETCH_COUNTRIES:
       return {
         ...state,
-        country: action.payload
+        countries: action.payload
       };
+
     default:
       return state;
   }

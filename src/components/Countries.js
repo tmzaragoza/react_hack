@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 
 export default function Countries({ country }) {
   return (
-    <ul>{country.country}</ul>
-
+    // <ul>{country}</ul>
+    <>
+    </>
   );
 }
 
 Countries.propTypes = {
-  country: PropTypes.array.isRequired
+  country: PropTypes.object
 };

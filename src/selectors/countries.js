@@ -1,4 +1,4 @@
 export const getCountries = state => {
-  console.log('getCountries selector', state.countries.country);
+  console.log('getCountries selector', state.countries);
   return state.countries;
 };
