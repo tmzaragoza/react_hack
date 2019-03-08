@@ -2,7 +2,11 @@ import { FETCH_COUNTRIES } from '../actions/countries';
 const initialState = {
   countries: [
     {
-      name: 'fake name'
+      name: 'fake name',
+      capital: 'fake capital',
+      population: [],
+      language: 'fake language',
+      flag: 'flag'
     }
   ] 
   // capital: 'capital',

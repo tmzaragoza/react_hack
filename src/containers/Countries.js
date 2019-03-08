@@ -7,8 +7,8 @@ import { fetchCountries } from '../actions/countries';
 
 class CountriesContainer extends PureComponent {
   static propTypes = {
-    countries: PropTypes.object,
-    fetch: PropTypes.func
+    countries: PropTypes.array.isRequired,
+    fetch: PropTypes.func.isRequired
   };
 
   componentDidMount() {

@@ -1,14 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Country from '../components/Country';
 
-export default function Countries({ country }) {
+export default function Countries({ countries }) {
+  const listOfCountries = countries.map((country, i) => {
+    return <li key={i}><Country country={country} /></li>;
+  });
+  
   return (
-    // <ul>{country}</ul>
-    <>
-    </>
+    <ul>{listOfCountries}</ul>
   );
 }
 
 Countries.propTypes = {
-  country: PropTypes.object
+  countries: PropTypes.array.isRequired
 };
