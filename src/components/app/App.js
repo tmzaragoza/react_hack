@@ -1,9 +1,8 @@
 import React from 'react';
+import CountriesContainer from '../../containers/Countries';
 
 export default function App() {
   return (
-    <>
-      <h2> hi</h2>
-    </>
+    <CountriesContainer />
   );
 }
