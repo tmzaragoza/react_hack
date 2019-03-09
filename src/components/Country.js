@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from '../components/app/App.css'
 
 export default function Country({ country }) {
   const languages = country.languages.map((language, i) => {
@@ -7,14 +8,16 @@ export default function Country({ country }) {
   });
 
   return (
-    <li>
-      <img src={country.flag} />
-      <h3>{country.name}</h3>
-      <p>Capital City: {country.capital}</p>
-      <p>Population: {country.population}</p> 
-      <p>Languages</p>
-      <ol>{languages}</ol>
-    </li>
+    <div className={styles.country}>
+      <li>
+        <img src={country.flag} />
+        <h3>{country.name}</h3>
+        <p>Capital City: {country.capital}</p>
+        <p>Population: {country.population}</p>
+        <p>Languages</p>
+        <ol>{languages}</ol>
+      </li>
+    </div>
   );
 }
 

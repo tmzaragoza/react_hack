@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Country from '../components/Country';
 import Input from '@material-ui/core/Input';
 import { withStyles } from '@material-ui/core/styles';
+import styles1 from '../components/app/App.css';
 
 const styles = theme => ({
   container: {
@@ -27,7 +28,7 @@ function Countries({ countries, term, onChange }) {
           'aria-label': 'Description',
         }}
       />
-      <ul>{listOfCountries}</ul>
+      <ul className={styles1.ul}>{listOfCountries}</ul>
     </>
   );
 }
