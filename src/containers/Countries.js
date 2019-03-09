@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Countries from '../components/Countries';
-import { getCountries } from '../selectors/countries';
+import { getFilteredCountry } from '../selectors/countries';
 import { fetchCountries, updateSearchTerm } from '../actions/countries';
 
 class CountriesContainer extends PureComponent {
@@ -27,7 +27,7 @@ class CountriesContainer extends PureComponent {
 }
 
 const mapStateToProps = state => ({
-  countries: getCountries(state),
+  countries: getFilteredCountry(state),
   
 });
 

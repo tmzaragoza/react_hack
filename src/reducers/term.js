@@ -1,16 +1,16 @@
-import { FETCH_COUNTRIES } from '../actions/countries';
+import { UPDATE_SEARCH_TERM } from '../actions/countries';
 const initialState = {
-  countries: []
+  term: ''
 };
 
 export default function reducer(state = initialState, action) {
   switch(action.type) {
-    case FETCH_COUNTRIES:
+    case UPDATE_SEARCH_TERM: 
       return {
         ...state,
-        countries: action.payload
+        term: action.payload
       };
     default:
-      return state;
+      return state; 
   }
 }
