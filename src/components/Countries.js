@@ -23,12 +23,13 @@ function Countries({ countries, term, onChange }) {
 
   return (
     <>
-    <div className={styles1.countries}>
+    <div>
       <Input type="text" name="term" value={term} onChange={onChange}
         placeholder='Search'
         inputProps={{
           'aria-label': 'Description',
         }}
+        className={styles1.search}
       />
     </div>
       <ul className={styles1.ul}>{listOfCountries}</ul>

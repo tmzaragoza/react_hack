@@ -8,9 +8,8 @@ ul {
   padding: 20px;
   color: black;
 }
-.countries {
-  div {
-    text-align: center;
-  }
+.search {
+  margin: 0 50px;
+  width: 150px;
 }
   

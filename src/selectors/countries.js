@@ -2,7 +2,7 @@ export const getCountries = state => {
   return state.countryReducer.countries;
 };
 
-export const getSearchTerm = state => state.term.term;
+export const getSearchTerm = state => state.term.term.toLowerCase();
 
 export const getFilteredCountry = state => {
   const searchTerm = getSearchTerm(state);
