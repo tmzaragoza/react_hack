@@ -1,0 +1,16 @@
+
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30vh, 1fr));
+  list-style: none;
+  margin: 20px;
+  padding: 20px;
+  color: black;
+}
+.countries {
+  div {
+    text-align: center;
+  }
+}
+  

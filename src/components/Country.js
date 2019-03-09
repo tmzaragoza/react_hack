@@ -4,7 +4,7 @@ import styles from '../components/Country.css';
 
 export default function Country({ country }) {
   const languages = country.languages.map((language, i) => {
-    return <li styles={styleMedia.li}key={i}>{language.name}</li>;
+    return <li className={styles.li}key={i}>{language.name}</li>;
   });
 
   return (

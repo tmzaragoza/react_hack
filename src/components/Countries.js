@@ -3,12 +3,13 @@ import PropTypes from 'prop-types';
 import Country from '../components/Country';
 import Input from '@material-ui/core/Input';
 import { withStyles } from '@material-ui/core/styles';
-import styles1 from '../components/app/App.css';
+import styles1 from './Countries.css';
 
 const styles = theme => ({
   container: {
-    display: 'flex',
+    display: 'center',
     flexWrap: 'wrap',
+    
   },
   input: {
     margin: theme.spacing.unit,
@@ -22,12 +23,14 @@ function Countries({ countries, term, onChange }) {
 
   return (
     <>
+    <div className={styles1.countries}>
       <Input type="text" name="term" value={term} onChange={onChange}
         placeholder='Search'
         inputProps={{
           'aria-label': 'Description',
         }}
       />
+    </div>
       <ul className={styles1.ul}>{listOfCountries}</ul>
     </>
   );

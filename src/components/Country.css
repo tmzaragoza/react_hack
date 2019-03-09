@@ -1,9 +1,7 @@
 .li {
   list-style: none;
   text-align: center;
-  display: none;
 }
-
 .country {
   text-align: center;
   margin: 10px;
@@ -12,4 +10,10 @@
     list-style: none;
     display: contents;
   }
+}
+img {
+  position: relative;
+  border: solid red;
+  height: 100%;
+  width: 15vw;
 }
