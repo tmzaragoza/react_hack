@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from '../components/app/App.css'
+import styles from '../components/Country.css';
 
 export default function Country({ country }) {
   const languages = country.languages.map((language, i) => {
-    return <li key={i}>{language.name}</li>;
+    return <li styles={styleMedia.li}key={i}>{language.name}</li>;
   });
 
   return (

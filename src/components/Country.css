@@ -1,0 +1,15 @@
+.li {
+  list-style: none;
+  text-align: center;
+  display: none;
+}
+
+.country {
+  text-align: center;
+  margin: 10px;
+  border: solid black;
+  ol {
+    list-style: none;
+    display: contents;
+  }
+}
